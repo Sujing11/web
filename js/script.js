@@ -22,24 +22,32 @@ async function getProducts() {
 
 async function createProduct() {
     const form = document.getElementById("create");
-    const formData = new FormData(form);
 
-    // Convertir el valor del checkbox a "true" o "false"
-    const isAvailable = form.isAvailable.checked ? "true" : "false";
-    formData.set("isAvailable", isAvailable);
-
-    const data = new URLSearchParams(formData).toString();
+    // Construir el objeto de producto
+    const productData = {
+        name: form.name.value,
+        sku: form.sku.value,
+        price: parseFloat(form.price.value),
+        description: form.description.value,
+        imagenes: [
+            {
+                url: form.imageURL.value,
+                name: form.imageName.value
+            }
+        ],
+        isAvailable: form.isAvailable.checked
+    };
 
     let message = await fetch(apiURL, {
         method: "POST",
         headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
+            "Content-Type": "application/json",
         },
-        body: data,
+        body: JSON.stringify(productData),
     });
+    
     message = await message.json();
     console.log(message);
-
 
     form.reset();
 
