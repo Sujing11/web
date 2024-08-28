@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Productos Gemas</title>
+    <!-- Favicon -->
+    <link href="/img/favicon.ico" rel="icon">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/Recurso 5.png" width="150px" alt="logo">
+        </div>
+    </header>
+
+    <div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="">Productos</a>
+            <a href="./blog.html">Blog</a>
+            <a href="">Nosotros</a>
+            <a href="">Contacto</a>
+        </nav>
+        <div class="hamburguesa">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <div class="servicios">
+        <h2>NUESTROS PRODUCTOS</h2>
+    </div>
+    <div id="product" class="container-card">
+        <div class="card">
+            <figure>
+                <img src="./img/botella_aceite.png" alt="imagen contacto">
+            </figure>
+            <div class="descrip-card">
+                <h3>Aceite de aguacate</h3>
+                <p>Producto graso de origen vegetal, 100$ puro y natural, extraido de la pulpa del aguacate variedad Hass mediante la técnica por prensado en frio.</p>
+                <a href="#">Leer mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="/img/piña.png" alt="imagen contacto">
+            </figure>
+            <div class="descrip-card">
+                <h3>Piña Deshidratada</h3>
+                <p>Podemos crear la identidad corporativa de tu empresa. Diseño , Maquetación de folletos, Catálogos,
+                    Papelería y mucho más.</p>
+                <a href="#">leer mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="/img/fresa.png" alt="imagen contacto">
+            </figure>
+            <div class="descrip-card">
+                <h3>Fresa Deshidratada</h3>
+                <p>Podemos crear la identidad corporativa de tu empresa. Diseño , Maquetación de folletos, Catálogos,
+                    Papelería y mucho más.</p>
+                <a href="#">leer mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="/img/mango.png" alt="imagen contacto">
+            </figure>
+            <div class="descrip-card">
+                <h3>Mango Deshidratado</h3>
+                <p>Podemos crear la identidad corporativa de tu empresa. Diseño , Maquetación de folletos, Catálogos,
+                    Papelería y mucho más.</p>
+                <a href="#">leer mas</a>
+            </div>
+        </div>
+
+    </div>
+
+    <section>
+        <form id="create">
+            <label for="name">Nombre</label>
+            <input name="name" type="text" id="name">
+            <label for="sku">Referencia</label>
+            <input name="sku" type="text" id="sku">
+            <label for="price">Precio</label>
+            <input name="price" type="number" id="price">
+            <label for="description">Descripcion</label>
+            <textarea name="description" id="description" cols="20" rows="3"></textarea>
+            <label for="image">Imagen</label>
+            <input name="image" type="url" id="image" accept="image/*">
+            <div class="checkbox-container">
+                <input name="isAvailable" type="checkbox" id="isAvailable">
+                <label for="isAvailable">Disponible</label>
+            </div>
+            <button type="button" onclick="createProduct()">Crear</button>
+        </form>
+    </section>
+
+
+    <footer id="pie">
+        <p>© 2024 Productos Gemas</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        getProducts();
+    </script>
+</body>
+
+</html>
