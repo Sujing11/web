@@ -3,37 +3,152 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Gemas</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Productos Gemas</title>
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
     <!-- Favicon -->
     <link href="/img/favicon.ico" rel="icon">
 
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="/img/Recurso 5.png" width="150px" alt="logo">
-        </div>
-    </header>
 
-    <div>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="">Productos</a>
-            <a href="./blog.html">Blog</a>
-            <a href="">Nosotros</a>
-            <a href="">Contacto</a>
-        </nav>
-        <div class="hamburguesa">
-            <span></span><span></span><span></span>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-sm bg-white navbar-light">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="Avatar Logo" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex m-2 me-3">
+                <a href="#" class="position-relative me-4 my-auto">
+                    <i class="fa fa-shopping-bag fa-2x"></i>
+                    <span
+                        class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white px-1"
+                        style="top: -2px; left: 20px; height: 20px; min-width: 20px;">3</span>
+                </a>
+                <a href="#" class="my-auto">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleDark" class="carousel carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./img/mockup_doypack.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenidos A Nuestra Tienda</h5>
+                    <p>Descubre la pureza de nuestros productos, elaborados con pasión y dedicación. Te invitamos a
+                        disfrutar de alimentos naturales y nutritivos, que no solo cuidan tu salud, sino que también
+                        celebran el valor de la naturaleza. ¡Gracias por confiar en nosotros!</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/pxfuel.com (19).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Conoce Nuestros Productos</h5>
+                    <p>Sumérgete en el mundo de la calidad natural. Cada uno de nuestros productos está diseñado para
+                        ofrecerte lo mejor de la naturaleza, sin procesos químicos y con un sabor y nutrición
+                        incomparables. ¡Descubre el valor de lo auténtico!.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/pxfuel.com (20).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Inspirate en Nuestro Blog</h5>
+                    <p>Más que productos, te ofrecemos conocimiento. Visita nuestro blog y descubre recetas, consejos de
+                        salud, y artículos que te ayudarán a aprovechar al máximo el poder de lo natural. Juntos,
+                        podemos transformar tu estilo de vida y llevarlo a un nuevo nivel de bienestar. ¡La inspiración
+                        te espera!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" role="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="about">
+        <div class="container">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="about_img">
+                        <figure><img src="./img/pxfuel.com (20).jpg" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-7  aboutText">
+                    <div class="titlepage">
+                        <h2>Sobre Nosotros</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words which don't look even
+                            slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                            isn't
+                            anything embarrassing hidden in the middle of text.</p>
+                    </div>
+                    <div class="d-flex">
+                        <a href="" class="text-uppercase custom_dark-btn">
+                            leer mas
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- GRID CARDS -->
     <div class="servicios">
-        <h2>NUESTROS PRODUCTOS</h2>
+        <div class="titlepageH">
+            <h2>Nuestros Productos</h2>
+            <p>Descubre recetas, consejos de salud, y artículos que te ayudarán a aprovechar al máximo
+                el poder de lo
+                natural
+        </div>
     </div>
     <div id="product" class="container-card">
         <div class="card">
@@ -44,7 +159,6 @@
                 <h3>Aceite de aguacate</h3>
                 <p>Producto graso de origen vegetal, 100$ puro y natural, extraido de la pulpa del aguacate variedad
                     Hass mediante la técnica por prensado en frio.</p>
-                <a href="#">Leer mas</a>
             </div>
         </div>
         <div class="card">
@@ -55,7 +169,6 @@
                 <h3>Piña Deshidratada</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aliquam fuga inventore, modi
                     nesciunt consequuntur consectetur explicabo.</p>
-                <a href="#">leer mas</a>
             </div>
         </div>
         <div class="card">
@@ -66,7 +179,6 @@
                 <h3>Fresa Deshidratada</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aliquam fuga inventore, modi
                     nesciunt consequuntur consectetur explicabo.</p>
-                <a href="#">leer mas</a>
             </div>
         </div>
         <div class="card">
@@ -77,14 +189,13 @@
                 <h3>Mango Deshidratado</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aliquam fuga inventore, modi
                     nesciunt consequuntur consectetur explicabo.</p>
-                <a href="#">leer mas</a>
             </div>
         </div>
 
     </div>
 
+<!-- FORMULARIO PRODUCTOS -->
     <section>
-
         <form id="create">
             <label for="name">Nombre</label>
             <input name="name" type="text" id="name">
@@ -106,12 +217,259 @@
         </form>
     </section>
 
+    <!-- BLOG -->
+    <section id="about">
+        <div class="blog layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titlepageH">
+                            <h2>Blog</h2>
+                            <p>Descubre recetas, consejos de salud, y artículos que te ayudarán a aprovechar al máximo
+                                el poder de lo
+                                natural
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="blog_img">
+                            <figure><img src="./img/mockup_doypack.png" alt="#" /></figure>
+                        </div>
+                    </div>
+                    <div class="col-md-7 padding_right0">
+                        <div class="max_width">
+                            <div class="titlepage">
+                                <h2>Propiedades de la Piña</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                                <button class="read_more" href="#">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer id="pie">
-        <p>© 2024 Productos Gemas</p>
-    </footer>
+    <!-- TESTIMONIOS -->
+    <section>
+        <div class="clients layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titlepage">
+                            <h2>Comentarios de clientes</h2>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut la</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="myCarousel" class="carousel slide clients_Carousel " data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container">
+                                        <div class="carousel-caption ">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="clients_box">
+                                                        <figure><img src="images/our.png" alt="#" /></figure>
+                                                        <h3>Maria Rodriguez</h3>
+                                                        <p>It is a long established fact that a reader will be
+                                                            distracted by the readable
+                                                            content of a page when looking at its layout. The point of
+                                                            using Lorem Ipsum
+                                                            is that it has a more-or-less normal distribution of
+                                                            letters,It is a long
+                                                            established fact a more-or-less normal distribution of
+                                                            letters,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="clients_box">
+                                                        <figure><img src="images/our.png" alt="#" /></figure>
+                                                        <h3>Jose Mendez</h3>
+                                                        <p>It is a long established fact that a reader will be
+                                                            distracted by the readable
+                                                            content of a page when looking at its layout. The point of
+                                                            using Lorem Ipsum
+                                                            is that it has a more-or-less normal distribution of
+                                                            letters,It is a long
+                                                            established fact a more-or-less normal distribution of
+                                                            letters,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="clients_box">
+                                                        <figure><img src="images/our.png" alt="#" /></figure>
+                                                        <h3>Camila Rojas</h3>
+                                                        <p>It is a long established fact that a reader will be
+                                                            distracted by the readable
+                                                            content of a page when looking at its layout. The point of
+                                                            using Lorem Ipsum
+                                                            is that it has a more-or-less normal distribution of
+                                                            letters,It is a long
+                                                            established fact a more-or-less normal distribution of
+                                                            letters,</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <i class='fa fa-angle-left'></i>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <i class='fa fa-angle-right'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CONTACT -->
+    <section class="contact_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mr-auto">
+                    <form action="">
+                        <div class="contact_form-container">
+                            <div>
+                                <h2 class="font-weight-bold">Contactanos</h2>
+                                <div>
+                                    <input type="text" placeholder="Nombre">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Numero contacto">
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="Correo">
+                                </div>
+                                <div>
+                                    <textarea name="" id="" placeholder="Mensaje"></textarea>
+                                </div>
+                                <div class="mt-3">
+                                    <button type="submit">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <div class="container-fluid bg-dark text-white-50 footer pt-3 mt-3">
+        <div class="container py-3">
+            <div class="pb-3 mb-3" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-center pt-3">
+                            <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Distribuir equitativamente las columnas en el contenedor -->
+            <div class="container py-3">
+                <div class="row g-5">
+                    <!-- Columna 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Información</h4>
+                            <a class="btn-link" href="">Sobre nosotros</a>
+                            <a class="btn-link" href="">Contáctanos</a>
+                            <a class="btn-link" href="">Política de privacidad</a>
+                            <a class="btn-link" href="">Términos & Condiciones</a>
+                            <a class="btn-link" href="">FAQs & Ayuda</a>
+                        </div>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Cuenta</h4>
+                            <a class="btn-link" href="">Mi cuenta</a>
+                            <a class="btn-link" href="">Carrito de compras</a>
+                            <a class="btn-link" href="">Lista de deseos</a>
+                            <a class="btn-link" href="">Historial de órdenes</a>
+                        </div>
+                    </div>
+                    <!-- Columna 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contacto</h4>
+                            <p>Bogotá, Colombia</p>
+                            <p>productosgemas@gmail.com</p>
+                            <p>+57 322 4646 426</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="text-light">Copyright &copy; 2024 Productos Gemas. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+    <!-- SCRIPTS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="./js/main.js"></script>
+
     <script>
         getProducts();
     </script>
