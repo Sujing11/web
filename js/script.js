@@ -55,3 +55,22 @@ async function createProduct() {
     document.getElementById("product").innerHTML = "";  // Limpiar el contenido actual
     getProducts();  // Volver a cargar la lista de productos
 }
+
+
+// Back to top button
+(function ($) {
+    "use strict";
+
+   $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+        $('.back-to-top').fadeIn('slow');
+    } else {
+        $('.back-to-top').fadeOut('slow');
+    }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+
+})(jQuery);
