@@ -1,4 +1,4 @@
-const apiURL = 'https://talentotech.vercel.app/products/';
+const apiURL = 'https://talentotech.vercel.app/contacts/';
 
 const tableBody = document.getElementById("tableBody")
 const inputId = document.getElementById("id")
