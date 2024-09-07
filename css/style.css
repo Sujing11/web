@@ -390,6 +390,7 @@ nav a.active {
     font-weight: bold;
     border: none;
 }
+
 /* blog section */
 .blog-slide-text {
     padding-top: 90px;
@@ -636,6 +637,51 @@ nav a.active {
 .nav.nav-tabs .nav-link.active {
     border-bottom: 2px solid var(--bs-secondary) !important;
 }
+
+/* TABLA */
+table {
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+
+table.scrolldown tbody,
+table.scrolldown thead {
+    display: block;
+}
+
+table.scrolldown tbody {
+    height: 120px;
+    overflow-y: auto;
+}
+
+tbody td,
+thead th {
+    width: 300px;
+    padding: 4px;
+    border-right: 2px solid white;
+}
+
+tbody tr:hover {
+    background-color: whitesmoke;
+}
+
+thead {
+    background-color: var(--morazul);
+    color: white;
+}
+
+#tableBody .btn {
+    color: white !important;
+    background-color: var(--morazul);
+}
+
+#tableBody .btn:hover {
+    background-color: var(--manzana) !important;
+    color: var(--morazul) !important;
+    font-weight: bold;
+}
+
 
 /* Media Queries */
 @media (max-width: 1200px) {
