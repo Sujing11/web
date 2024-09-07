@@ -13,6 +13,7 @@
     <!-- Libraries Stylesheet -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -29,13 +30,11 @@
                 </button>
                 <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="." class="nav-item nav-link active">Contacto</a>
-                        <a href="." class="nav-item nav-link">Comentarios</a>
-                        <a href="./" class="nav-item nav-link">Productos</a>
-                        <a href="." class="nav-item nav-link">Usuarios</a>
+                        <a href="./admiContacts.html" class="nav-item nav-link">Contacto</a>
+                        <a href="./admiProducts.html" class="nav-item nav-link active">Productos</a>
                     </div>
                     <div class="d-flex m-3 me-0">
-                        <a href="#" class="my-auto">
+                        <a href="./admiProducts.html" class="my-auto">
                             <i class="fas fa-user fa-2x"></i>
                         </a>
                     </div>
@@ -44,61 +43,76 @@
         </div>
     </div>
 
-    <h2 class="m-5 text-center">Lista de Mensajes</h2>
+    <!-- PRODUCTOS -->
+    <section>
+        <div class="blog layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titlepageH">
+                            <h2>Productos</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="product" class="container-card">
+                    </div>
+                </div>
+            </div>
+    </section>
 
-    <div class="m-4">
-        <table class="mb-4">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>Telefono</th>
-                    <th>Mensaje</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-            </tbody>
-        </table>
-
-        <!-- <button type="button" class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#modal" onclick="btnAdd()">Agregar</button>  -->
-    </div>
-
+    <!-- Botón para abrir el modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" onclick="btnAdd()">
+        Crear Producto
+    </button>
 
     <!-- Modal -->
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario</h1>
+                    <h5 class="modal-title" id="exampleModalLabel">Crear Producto</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div>
+                    <form id="create">
                         <div id="contenedorId" class="mb-2 mx-1">
                             <label class="form-label" for="id"><b>Id</b></label>
                             <input class="form-control" id="id" type="text" readonly>
                         </div>
-                        <div class="mb-2 mx-1">
-                            <label class="form-label" for="name"><b>Nombre</b></label>
-                            <input class="form-control" id="name" type="text" placeholder="Ingrese el nombre">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input name="name" type="text" id="name" class="form-control">
                         </div>
-                        <div class="mb-2 mx-1">
-                            <label class="form-label" for="email"><b>Correo</b></label>
-                            <input class="form-control" id="email" type="text" placeholder="Ingrese el correo">
+                        <div class="mb-3">
+                            <label for="sku" class="form-label">Referencia</label>
+                            <input name="sku" type="text" id="sku" class="form-control">
                         </div>
-                        <div class="mb-2 mx-1">
-                            <label class="form-label" for="phone"><b>Telefono</b></label>
-                            <input class="form-control" id="phone" type="text" placeholder="Ingrese el telefono">
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Precio</label>
+                            <input name="price" type="number" id="price" class="form-control">
                         </div>
-                        <div class="mb-2 mx-1">
-                            <label class="form-label" for="message"><b>Mensaje</b></label>
-                            <textarea id="message" cols="20" rows="5" class="form-control"
-                                placeholder="Ingrese el mensaje"></textarea>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Descripcion</label>
+                            <textarea name="description" id="description" cols="20" rows="3"
+                                class="form-control"></textarea>
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="imageURL" class="form-label">URL imagen</label>
+                            <input name="url" type="url" id="imageURL" class="form-control" accept="image/*">
+                        </div>
+                        <div class="mb-3">
+                            <label for="imageName" class="form-label">Nombre de la Imagen</label>
+                            <input name="imageName" type="text" id="imageName" class="form-control">
+                        </div>
+                        <div class="form-check">
+                            <input name="isAvailable" type="checkbox" id="isAvailable" class="form-check-input">
+                            <label for="isAvailable" class="form-check-label">Disponible</label>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success btn-modal-footer" onclick="crear()">Agregar</button>
+                    <button type="button" class="btn btn-primary btn-modal-footer" onclick="crear()">Agregar</button>
                     <button type="button" class="btn btn-danger btn-modal-footer" onclick="eliminar()">Eliminar</button>
                     <button type="button" class="btn btn-primary btn-modal-footer"
                         onclick="actualizar()">Actualizar</button>
@@ -122,7 +136,7 @@
 
     <!-- Icon Font Stylesheet -->
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/contact.js"></script>
+    <script src="./js/admiProducts.js"></script>
 
 </body>
 

@@ -9,7 +9,6 @@ const mensaje = document.getElementById("message")
 const contenedorId = document.getElementById("contenedorId")
 const btnModalFooter = document.getElementsByClassName("btn-modal-footer")
 
-
 function obtener() {
 
     fetch(apiURL, {
@@ -22,10 +21,14 @@ function obtener() {
                     <td>${element.name}</td>
                     <td>${element.email}</td>
                     <td>${element.phone}</td>
-                    <td>${element.message}</td>
+                    <td class="message-column">
+                        <div class="message-content">
+                            ${element.message}
+                        </div>
+                    </td>
                     <td>
                         <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#modal" onclick="btnDetails('${element._id}')">
-                            Modificar
+                            Detalles
                         </button>
                     </td>
                 </tr>
