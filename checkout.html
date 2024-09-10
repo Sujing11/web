@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+
+    <title>Detalles Compra</title>
+    <!-- Favicon -->
+    <link href="/img/favicon.ico" rel="icon">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container-fluid">
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-sm">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="./index.html" class="nav-item nav-link">Inicio</a>
+                        <a href="./shop.html" class="nav-item nav-link active">Tienda</a>
+                        <a href="./blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="./about.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="./contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                    <div class="d-flex m-3 me-0">
+                        <a href="./cart.html" class="position-relative me-4 my-auto">
+                            <i class="fa fa-shopping-bag fa-2x"></i>
+                            <span
+                                class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white px-1"
+                                style="top: -2px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                        </a>
+                        <a href="./admiProducts.html" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Single Page Header -->
+    <div class="container-fluid page-header py-5">
+        <h1 class="text-center text-white display-6">Checkout</h1>
+        <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="./shop.html">Tienda</a></li>
+            <li class="breadcrumb-item"><a href="./cart.html">Carrito</a></li>
+            <li class="breadcrumb-item active text-white">Checkout</li>
+        </ol>
+    </div>
+
+    <!-- CHECKOUT -->
+    <div class=" py-5">
+        <div class="container py-5">
+            <h1 class="mb-4">Detalles de facturación</h1>
+            <form action="#">
+                <div class="row g-5">
+                    <div class="col-md-12 col-lg-6 col-xl-7">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="form-item w-100">
+                                    <label class="form-label my-3">Nombres<sup>*</sup></label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <div class="form-item w-100">
+                                    <label class="form-label my-3">Apellidos<sup>*</sup></label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Dirección<sup>*</sup></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Ciudad<sup>*</sup></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Departamento<sup>*</sup></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Número de contacto<sup>*</sup></label>
+                            <input type="tel" class="form-control">
+                        </div>
+                        <div class="form-item">
+                            <label class="form-label my-3">Correo electronico<sup>*</sup></label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-check my-3">
+                            <input type="checkbox" class="form-check-input" id="Account-1" name="Accounts"
+                                value="Accounts">
+                            <label class="form-check-label" for="Account-1">¿Crear cuenta?</label>
+                        </div>
+                        <hr>
+                        <div class="form-item">
+                            <textarea name="text" class="form-control" spellcheck="false" cols="30" rows="11"
+                                placeholder="Información adicional (Optional)"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-xl-5">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Productos</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex align-items-center mt-2">
+                                                <img src="img/kiwi.png" class="img-fluid rounded-circle"
+                                                    style="width: 100px; height: auto;" alt="">
+                                            </div>
+                                        </th>
+                                        <td class="py-5">Kiwi deshidratado</td>
+                                        <td class="py-5">$8000</td>
+                                        <td class="py-5">1</td>
+                                        <td class="py-5">$8000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                        </th>
+                                        <td class="py-5"></td>
+                                        <td class="py-5"></td>
+                                        <td class="py-5">
+                                            <p class="mb-0 text-dark py-3">Subtotal</p>
+                                        </td>
+                                        <td class="py-5">
+                                            <div class="py-3 border-bottom border-top">
+                                                <p class="mb-0 text-dark">$8000</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                        </th>
+                                        <td class="py-5">
+                                            <p class="mb-0 text-dark py-4">Envio</p>
+                                        </td>
+                                        <td colspan="3" class="py-5">
+                                            <div class="form-check text-start">
+                                                <input type="checkbox" class="form-check-input bg-primary border-0"
+                                                    id="Shipping-2" name="Shipping-1" value="Shipping">
+                                                <label class="form-check-label" for="Shipping-2">Bogotá:
+                                                    $5000</label>
+                                            </div>
+                                            <div class="form-check text-start">
+                                                <input type="checkbox" class="form-check-input bg-primary border-0"
+                                                    id="Shipping-3" name="Shipping-1" value="Shipping">
+                                                <label class="form-check-label" for="Shipping-3">Resto del pais:
+                                                    $12000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                        </th>
+                                        <td class="py-5">
+                                            <p class="mb-0 text-dark text-uppercase py-3">TOTAL</p>
+                                        </td>
+                                        <td class="py-5"></td>
+                                        <td class="py-5"></td>
+                                        <td class="py-5">
+                                            <div class="py-3 border-bottom border-top">
+                                                <p class="mb-0 text-dark">$16000</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+                            <div class="col-12">
+                                <div class="form-check text-start my-3">
+                                    <input type="checkbox" class="form-check-input bg-primary border-0" id="Transfer-1"
+                                        name="Transfer" value="Transfer">
+                                    <label class="form-check-label" for="Transfer-1">Direct Bank Transfer</label>
+                                </div>
+                                <p class="text-start text-dark">Make your payment directly into our bank account. Please
+                                    use your Order ID as the payment reference. Your order will not be shipped until the
+                                    funds have cleared in our account.</p>
+                            </div>
+                        </div>
+                        <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+                            <div class="col-12">
+                                <div class="form-check text-start my-3">
+                                    <input type="checkbox" class="form-check-input bg-primary border-0" id="Payments-1"
+                                        name="Payments" value="Payments">
+                                    <label class="form-check-label" for="Payments-1">Check Payments</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
+                            <div class="col-12">
+                                <div class="form-check text-start my-3">
+                                    <input type="checkbox" class="form-check-input bg-primary border-0" id="Delivery-1"
+                                        name="Delivery" value="Delivery">
+                                    <label class="form-check-label" for="Delivery-1">Cash On Delivery</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 text-center align-items-center justify-content-center pt-4">
+                            <button type="button"
+                                class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary">Confirmar pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="container-fluid bg-dark text-white-50 footer pt-3 mt-3">
+        <div class="container py-3">
+            <div class="pb-3 mb-3" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-center pt-3">
+                            <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-3">
+                <div class="row g-5">
+                    <!-- Columna 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Información</h4>
+                            <a class="btn-link" href="./about.html">Sobre nosotros</a>
+                            <a class="btn-link" href="./contact.html">Contáctanos</a>
+                            <a class="btn-link" href="">Política de privacidad</a>
+                            <a class="btn-link" href="">Términos & Condiciones</a>
+                            <a class="btn-link" href="">FAQs & Ayuda</a>
+                        </div>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Cuenta</h4>
+                            <a class="btn-link" href="">Mi cuenta</a>
+                            <a class="btn-link" href="./cart.html">Carrito de compras</a>
+                            <a class="btn-link" href="">Lista de deseos</a>
+                            <a class="btn-link" href="">Historial de órdenes</a>
+                        </div>
+                    </div>
+                    <!-- Columna 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contacto</h4>
+                            <p>Bogotá, Colombia</p>
+                            <p>productosgemas@gmail.com</p>
+                            <p>+57 322 4646 426</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="text-light">Copyright &copy; 2024 Productos Gemas. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

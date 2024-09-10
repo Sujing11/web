@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+
+  <title>Carrito</title>
+  <!-- Favicon -->
+  <link href="/img/favicon.ico" rel="icon">
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="container-fluid">
+    <div class="container px-0">
+      <nav class="navbar navbar-light bg-white navbar-expand-sm">
+        <a href="index.html" class="navbar-brand">
+          <img src="./img/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="./index.html" class="nav-item nav-link">Inicio</a>
+            <a href="./shop.html" class="nav-item nav-link active">Tienda</a>
+            <a href="./blog.html" class="nav-item nav-link">Blog</a>
+            <a href="./about.html" class="nav-item nav-link">Nosotros</a>
+            <a href="./contact.html" class="nav-item nav-link">Contacto</a>
+          </div>
+          <div class="d-flex m-3 me-0">
+            <a href="./cart.html" class="position-relative me-4 my-auto">
+              <i class="fa fa-shopping-bag fa-2x"></i>
+              <span
+                class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white px-1"
+                style="top: -2px; left: 15px; height: 20px; min-width: 20px;">3</span>
+            </a>
+            <a href="./admiProducts.html" class="my-auto">
+              <i class="fas fa-user fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Single Page Header -->
+  <div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Carrito de Compras</h1>
+    <ol class="breadcrumb justify-content-center mb-0">
+      <li class="breadcrumb-item"><a href="./shop.html">Tienda</a></li>
+      <li class="breadcrumb-item active text-white">Carrito</li>
+    </ol>
+  </div>
+
+  <!-- CART -->
+  <div class="py-5">
+    <div class="container py-5">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Total</th>
+              <th scope="col">Quitar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <div class="d-flex align-items-center">
+                  <img src="./img/kiwi.png" class="img-fluid me-5 rounded-circle"
+                    style="width: 100px; height: auto;" alt="">
+                </div>
+              </th>
+              <td>
+                <p class="mb-0 mt-4">Kiwi deshidratado</p>
+              </td>
+              <td>
+                <p class="mb-0 mt-4">$ 8000</p>
+              </td>
+              <td>
+                <div class="input-group quantity mt-4" style="width: 100px;">
+                  <div class="input-group-btn">
+                    <button class="btn btn-sm btn-minus rounded-circle bg-light border">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </div>
+                  <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                  <div class="input-group-btn">
+                    <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="mb-0 mt-4">$ 8000</p>
+              </td>
+              <td>
+                <button class="btn btn-md rounded-circle bg-light border mt-4">
+                  <i class="fa fa-times text-danger"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="d-flex align-items-center">
+                  <img src="./img/kiwi.png" class="img-fluid me-5 rounded-circle"
+                    style="width: 100px; height: auto;" alt="">
+                </div>
+              </th>
+              <td>
+                <p class="mb-0 mt-4">Fresa deshidratada</p>
+              </td>
+              <td>
+                <p class="mb-0 mt-4">$ 7000</p>
+              </td>
+              <td>
+                <div class="input-group quantity mt-4" style="width: 100px;">
+                  <div class="input-group-btn">
+                    <button class="btn btn-sm btn-minus rounded-circle bg-light border">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </div>
+                  <input type="text" class="form-control form-control-sm text-center border-0" value="2">
+                  <div class="input-group-btn">
+                    <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="mb-0 mt-4">$ 14000</p>
+              </td>
+              <td>
+                <button class="btn btn-md rounded-circle bg-light border mt-4">
+                  <i class="fa fa-times text-danger"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="d-flex align-items-center">
+                  <img src="./img/piña.png" class="img-fluid me-5 rounded-circle"
+                    style="width: 100px; height: auto;" alt="">
+                </div>
+              </th>
+              <td>
+                <p class="mb-0 mt-4">Pina deshidrata</p>
+              </td>
+              <td>
+                <p class="mb-0 mt-4">$ 5000</p>
+              </td>
+              <td>
+                <div class="input-group quantity mt-4" style="width: 100px;">
+                  <div class="input-group-btn">
+                    <button class="btn btn-sm btn-minus rounded-circle bg-light border">
+                      <i class="fa fa-minus"></i>
+                    </button>
+                  </div>
+                  <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                  <div class="input-group-btn">
+                    <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                      <i class="fa fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="mb-0 mt-4">$ 5000</p>
+              </td>
+              <td>
+                <button class="btn btn-md rounded-circle bg-light border mt-4">
+                  <i class="fa fa-times text-danger"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-5">
+        <input type="text" class="border-0 border-bottom rounded me-5 py-3 mb-4" placeholder="Coupon Code">
+        <button class="btn border-secondary rounded-pill px-4 py-3 text-primary" type="button">Aplicar Cupon</button>
+      </div>
+      <div class="row g-4 justify-content-end">
+        <div class="col-8"></div>
+        <div class="col-sm-8 col-md-7 col-lg-6 col-xl-4">
+          <div class="bg-light rounded">
+            <div class="p-4">
+              <h1 class="display-6 mb-4">Precio <span class="fw-normal">Total</span></h1>
+              <div class="d-flex justify-content-between mb-4">
+                <h5 class="mb-0 me-4">Subtotal:</h5>
+                <p class="mb-0">$27000</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-0 me-4">Envio</h5>
+                <div class="">
+                  <p class="mb-0">Costo: $ 5000</p>
+                </div>
+              </div>
+              <p class="mb-0 text-end">Envio a Bogota.</p>
+            </div>
+            <div class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
+              <h5 class="mb-0 ps-4 me-4">Total</h5>
+              <p class="mb-0 pe-4">$32000</p>
+            </div>
+            <a href="./checkout.html" class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" type="button">Proceder al Pago</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div class="container-fluid bg-dark text-white-50 footer pt-3 mt-3">
+    <div class="container py-3">
+      <div class="pb-3 mb-3" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3">
+            <div class="d-flex justify-content-center pt-3">
+              <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                  class="fab fa-instagram"></i></a>
+              <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                  class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                  class="fab fa-whatsapp"></i></a>
+              <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-3">
+        <div class="row g-5">
+          <!-- Columna 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex flex-column text-start footer-item">
+              <h4 class="text-light mb-3">Información</h4>
+              <a class="btn-link" href="">Sobre nosotros</a>
+              <a class="btn-link" href="">Contáctanos</a>
+              <a class="btn-link" href="">Política de privacidad</a>
+              <a class="btn-link" href="">Términos & Condiciones</a>
+              <a class="btn-link" href="">FAQs & Ayuda</a>
+            </div>
+          </div>
+          <!-- Columna 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex flex-column text-start footer-item">
+              <h4 class="text-light mb-3">Cuenta</h4>
+              <a class="btn-link" href="">Mi cuenta</a>
+              <a class="btn-link" href="">Carrito de compras</a>
+              <a class="btn-link" href="">Lista de deseos</a>
+              <a class="btn-link" href="">Historial de órdenes</a>
+            </div>
+          </div>
+          <!-- Columna 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-item">
+              <h4 class="text-light mb-3">Contacto</h4>
+              <p>Bogotá, Colombia</p>
+              <p>productosgemas@gmail.com</p>
+              <p>+57 322 4646 426</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <span class="text-light">Copyright &copy; 2024 Productos Gemas. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+      class="fa fa-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

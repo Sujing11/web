@@ -40,11 +40,11 @@
                         <a href="./contact.html" class="nav-item nav-link">Contacto</a>
                     </div>
                     <div class="d-flex m-3 me-0">
-                        <a href="#" class="position-relative me-4 my-auto">
+                        <a href="./cart.html" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                             <span
                                 class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white px-1"
-                                style="top: -2px; left: 25px; height: 20px; min-width: 20px;">3</span>
+                                style="top: -2px; left: 15px; height: 20px; min-width: 20px;">3</span>
                         </a>
                         <a href="./admiProducts.html" class="my-auto">
                             <i class="fas fa-user fa-2x"></i>
@@ -61,107 +61,130 @@
         <h1 class="text-center text-white display-6">Tienda</h1>
     </div>
 
-    <!-- PRODUCTOS-->
-    <div class="fruite py-5">
-        <div class="container py-5">
-            <div class="col-12 titlepage">
-                <div class="text-center mx-auto" style="max-width: 700px;">
-                  <h2 class="text-primary">Productos Naturales</h2>
-                  <p class="mb-4">Si tienes alguna pregunta, inquietud o deseas más información sobre nuestros
-                    productos y servicios, no dudes en comunicarte con nosotros. Estaremos encantados de ayudarte.</p>
+    <!-- PRODUCTS -->
+    <section>
+        <div class="product layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titlepage">
+                            <h2>Nuestros Productos</h2>
+                            <p>Descubre recetas, consejos de salud, y artículos que te ayudarán a aprovechar al máximo
+                                el poder de lo natural</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            <div class="row g-4">
-                <div class="col-lg-9">
-                    <div class="row g-4 justify-content-left">
-                        <div class="col-md-6 col-lg-6 col-xl-4">
-                            <div class="rounded position-relative fruite-item">
-                                <div class="fruite-img">
-                                    <img src="./img/piña.png" class="img-fluid w-100 rounded-top" alt="">
-                                </div>
-                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                    <h4>Piña Deshidratada</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te
-                                        incididunt</p>
-                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                        <a href="#"
-                                            class="btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                class="fa fa-shopping-bag me-2 text-primary"></i>Añadir al carrito</a>
-                                    </div>
+                <div class="row">
+                    <div class="container-card">
+                        <div class="card">
+                            <img src="./img/aceite_aguacate.png" alt="Aceite de aguacate">
+                            <div class="card-content">
+                                <h5>Aceite de aguacate</h5>
+                                <h6>$ 5000</h6>
+                            </div>
+                            <div class="btn-container">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
+                                    <i class="fa fa-shopping-bag me-2"></i>Añadir
+                                </a>
+                                <div class="quantity-controls d-none">
+                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                        <i class="fa fa-plus-circle"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4">
-                            <div class="rounded position-relative fruite-item">
-                                <div class="fruite-img">
-                                    <img src="./img/fresa.png" class="img-fluid w-100 rounded-top" alt="">
-                                </div>
-                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                    <h4>Fresa Deshidratada</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te
-                                        incididunt</p>
-                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                        <a href="#"
-                                            class="btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                class="fa fa-shopping-bag me-2 text-primary"></i>Añadir al carrito</a>
-                                    </div>
+                        <div class="card">
+                            <img src="./img/piña.png" alt="Piña Deshidratada">
+                            <div class="card-content">
+                                <h5>Piña Deshidratada</h5>
+                                <h6>$ 5000</h6>
+                            </div>
+                            <div class="btn-container">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
+                                    <i class="fa fa-shopping-bag me-2"></i>Añadir
+                                </a>
+                                <div class="quantity-controls d-none">
+                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                        <i class="fa fa-plus-circle"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4">
-                            <div class="rounded position-relative fruite-item">
-                                <div class="fruite-img">
-                                    <img src="./img/mango.png" class="img-fluid w-100 rounded-top" alt="">
-                                </div>
-                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                    <h4>Mango Deshidratado</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te
-                                        incididunt</p>
-                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                        <a href="#"
-                                            class="btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                class="fa fa-shopping-bag me-2 text-primary"></i>Añadir al carrito</a>
-                                    </div>
+                        <div class="card">
+                            <img src="./img/fresa.png" alt="Fresa Deshidratada">
+                            <div class="card-content">
+                                <h5>Fresa Deshidratada</h5>
+                                <h6>$ 5000</h6>
+                            </div>
+                            <div class="btn-container">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
+                                    <i class="fa fa-shopping-bag me-2"></i>Añadir
+                                </a>
+                                <div class="quantity-controls d-none">
+                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                        <i class="fa fa-plus-circle"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 col-xl-4">
-                            <div class="rounded position-relative fruite-item">
-                                <div class="fruite-img">
-                                    <img src="./img/botella_aceite.png" class="img-fluid w-100 rounded-top" alt="">
-                                </div>
-                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                    <h4>Aceite de Aguacate</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te
-                                        incididunt</p>
-                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                        <a href="#"
-                                            class="btn border border-secondary rounded-pill px-3 text-primary"><i
-                                                class="fa fa-shopping-bag me-2 text-primary"></i>Añadir al carrito</a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <img src="./img/mango.png" alt="Mango Deshidratado">
+                            <div class="card-content">
+                                <h5>Mango Deshidratado</h5>
+                                <h6>$ 5000</h6>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="pagination d-flex justify-content-center mt-5">
-                                <a href="#" class="rounded">&laquo;</a>
-                                <a href="#" class="active rounded">1</a>
-                                <a href="#" class="rounded">2</a>
-                                <a href="#" class="rounded">3</a>
-                                <a href="#" class="rounded">&raquo;</a>
+                            <div class="btn-container">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
+                                    <i class="fa fa-shopping-bag me-2"></i>Añadir
+                                </a>
+                                <div class="quantity-controls d-none">
+                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                        <i class="fa fa-plus-circle"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row mt-4">
+                    <div id="product" class="container-card">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="pagination d-flex justify-content-center mt-5">
+                    <a href="#" class="rounded">&laquo;</a>
+                    <a href="#" class="active rounded">1</a>
+                    <a href="#" class="rounded">2</a>
+                    <a href="#" class="rounded">3</a>
+                    <a href="#" class="rounded">&raquo;</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <!--FOOTER-->
     <div class="container-fluid bg-dark text-white-50 footer pt-3 mt-3">
@@ -188,8 +211,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Información</h4>
-                            <a class="btn-link" href="">Sobre nosotros</a>
-                            <a class="btn-link" href="">Contáctanos</a>
+                            <a class="btn-link" href="./about.html">Sobre nosotros</a>
+                            <a class="btn-link" href="./contact.html">Contáctanos</a>
                             <a class="btn-link" href="">Política de privacidad</a>
                             <a class="btn-link" href="">Términos & Condiciones</a>
                             <a class="btn-link" href="">FAQs & Ayuda</a>
@@ -200,7 +223,7 @@
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Cuenta</h4>
                             <a class="btn-link" href="">Mi cuenta</a>
-                            <a class="btn-link" href="">Carrito de compras</a>
+                            <a class="btn-link" href="./cart.html">Carrito de compras</a>
                             <a class="btn-link" href="">Lista de deseos</a>
                             <a class="btn-link" href="">Historial de órdenes</a>
                         </div>
@@ -237,6 +260,7 @@
 
     <!-- JavaScript Libraries -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

@@ -1,4 +1,6 @@
 const apiURL = 'https://talentotech.vercel.app/products/';
+//const apiURL = 'http://localhost:3000/products/';
+
 
 const nombre = document.getElementById("name")
 const referencia = document.getElementById("sku")
@@ -152,7 +154,7 @@ async function crear() {
 
     document.getElementById("product").innerHTML = "";
 
-    getProducts();
+    obtener();
 }
 
 
