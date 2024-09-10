@@ -235,6 +235,7 @@ nav a.active {
 /** ABOUT **/
 .about {
     padding-top: 90px;
+    padding-bottom: 70px;
     display: flex;
     justify-content: center;
 }
@@ -290,7 +291,7 @@ nav a.active {
     width: 100%;
     margin: auto;
     padding: 20px;
-    margin-top: 90px;
+    margin-top: 45px;
     text-align: center;
 }
 
@@ -386,12 +387,13 @@ nav a.active {
 }
 
 /** BLOG **/
-.blog {
-    padding-top: 90px;
+#blog {
+    padding-top: 45px;
+    margin-top: 45px;
 }
 
 .blog .container-fluid {
-    padding: 45px;
+    padding: 0px;
 }
 
 .blog .blog_img figure img {
@@ -443,9 +445,11 @@ nav a.active {
     padding-top: 20px;
     width: 100%;
     display: inline-block;
+    padding-bottom: 20px;
 }
 
 .blog .titlepage .read_more {
+    text-decoration: none;
     border-radius: 5px;
     color: white;
     background-color: var(--morazul);
@@ -628,6 +632,7 @@ nav a.active {
     text-align: left;
     margin-left: 89px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .clients_box figure {
@@ -840,6 +845,22 @@ thead {
     color: var(--morazul) !important;
     font-weight: bold;
 }
+
+.message-column {
+    max-width: 200px;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  
+  .message-content {
+    max-height: 100px;
+    overflow-y: auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
 
 /*Formulario Productos*/
 .product form {

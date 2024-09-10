@@ -110,7 +110,7 @@ function limpiarInput() {
 function btnAdd() {
     btnModalFooter[0].style.display = "block";
     btnModalFooter[1].style.display = "none";
-    btnModalFooter[2].style.display = "none";
+    //btnModalFooter[2].style.display = "none";
     contenedorId.style.display = "none";
     limpiarInput();
 }
@@ -118,7 +118,7 @@ function btnAdd() {
 function btnDetails(id) {
     btnModalFooter[0].style.display = "none";
     btnModalFooter[1].style.display = "block";
-    btnModalFooter[2].style.display = "block";
+    //btnModalFooter[2].style.display = "block";
     contenedorId.style.display = "block";
     obtenerPorId(id);
 }
