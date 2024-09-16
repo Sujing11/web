@@ -7,7 +7,6 @@ const referencia = document.getElementById("sku")
 const precio = document.getElementById("price")
 const descripcion = document.getElementById("description")
 const imagen = document.getElementById("imageURL")
-const nombreImagen = document.getElementById("imageName")
 const disponible = document.getElementById("isAvailable")
 const contenedorId = document.getElementById("contenedorId")
 const btnModalFooter = document.getElementsByClassName("btn-modal-footer")
@@ -25,7 +24,6 @@ async function obtener() {
                     <h5>${product.name}</h5>
                     <h6>$ ${product.price}</h6>
                     <p>Ref: ${product.sku}</p>
-                    <p>${product.description}</p>
                     <p>${product.isAvailable ? 'Disponible' : 'Agotado'}</p>  
                 </div>
                 <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal"onclick="btnDetails('${product._id}')">Detalles</button>
@@ -46,7 +44,6 @@ function obtenerPorId(id) {
             precio.value = result.price;
             descripcion.value = result.description;
             imagen.value = result.imagenes && result.imagenes.length > 0 ? result.imagenes[0].url : '';
-            nombreImagen.value = result.imagenes && result.imagenes.length > 0 ? result.imagenes[0].name : '';
             disponible.checked = result.isAvailable; 
         })
         .catch(error => console.log('error', error));
@@ -92,7 +89,6 @@ function actualizar() {
         imagenes: [
             {
                 url: imagen.value,
-                name: nombreImagen.value
             }
         ],
         isAvailable: disponible.checked
@@ -133,7 +129,6 @@ async function crear() {
         imagenes: [
             {
                 url: form.imageURL.value,
-                name: form.imageName.value
             }
         ],
         isAvailable: form.isAvailable.checked
@@ -149,6 +144,7 @@ async function crear() {
     
     message = await message.json();
     console.log(message);
+    alert('Producto creado con éxito!');
 
     form.reset();
 
@@ -165,7 +161,6 @@ function limpiarInput() {
     precio.value = '';
     descripcion.value = '';
     imagen.value = '';
-    nombreImagen.value = '';
     disponible.value = '';
 }
 
