@@ -55,14 +55,20 @@
     </div>
   </div>
 
-  <!-- Single Page Header -->
-  <div class="container-fluid page-header py-5">
-    <h1 class="text-center text-white display-6">Carrito de Compras</h1>
-    <ol class="breadcrumb justify-content-center mb-0">
-      <li class="breadcrumb-item"><a href="./shop.html">Tienda</a></li>
-      <li class="breadcrumb-item active text-white">Carrito</li>
-    </ol>
-  </div>
+  <!-- Breadcrumbs -->
+  <section class="breadcrumbs-custom-inset">
+    <div class="breadcrumbs-custom context-dark bg-overlay-46">
+      <div class="container">
+        <h1 class="breadcrumbs-custom-title">Carrito de Compras</h1>
+        <ul class="breadcrumbs-custom-path">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="shop.html">Tienda</a></li>
+          <li class="active">Carrito</li>
+        </ul>
+      </div>
+      <div style="background-image: url(images/pxfuel.com\ \(20\).jpg);"></div>
+    </div>
+  </section>
 
   <!-- CART -->
   <div class="py-5">
@@ -83,15 +89,15 @@
             <tr>
               <th scope="row">
                 <div class="d-flex align-items-center">
-                  <img src="./img/kiwi.png" class="img-fluid me-5 rounded-circle"
-                    style="width: 100px; height: auto;" alt="">
+                  <img src="./img/kiwi.png" class="img-fluid me-5 rounded-circle" style="width: 100px; height: auto;"
+                    alt="">
                 </div>
               </th>
               <td>
                 <p class="mb-0 mt-4">Kiwi deshidratado</p>
               </td>
               <td>
-                <p class="mb-0 mt-4">$ 8000</p>
+                <p class="mb-0 mt-4">$ 6500</p>
               </td>
               <td>
                 <div class="input-group quantity mt-4" style="width: 100px;">
@@ -109,7 +115,7 @@
                 </div>
               </td>
               <td>
-                <p class="mb-0 mt-4">$ 8000</p>
+                <p class="mb-0 mt-4">$ 6500</p>
               </td>
               <td>
                 <button class="btn btn-md rounded-circle bg-light border mt-4">
@@ -120,15 +126,15 @@
             <tr>
               <th scope="row">
                 <div class="d-flex align-items-center">
-                  <img src="./img/kiwi.png" class="img-fluid me-5 rounded-circle"
-                    style="width: 100px; height: auto;" alt="">
+                  <img src="./img/fresa.png" class="img-fluid me-5 rounded-circle" style="width: 100px; height: auto;"
+                    alt="">
                 </div>
               </th>
               <td>
                 <p class="mb-0 mt-4">Fresa deshidratada</p>
               </td>
               <td>
-                <p class="mb-0 mt-4">$ 7000</p>
+                <p class="mb-0 mt-4">$ 6000</p>
               </td>
               <td>
                 <div class="input-group quantity mt-4" style="width: 100px;">
@@ -146,7 +152,7 @@
                 </div>
               </td>
               <td>
-                <p class="mb-0 mt-4">$ 14000</p>
+                <p class="mb-0 mt-4">$ 12000</p>
               </td>
               <td>
                 <button class="btn btn-md rounded-circle bg-light border mt-4">
@@ -157,8 +163,8 @@
             <tr>
               <th scope="row">
                 <div class="d-flex align-items-center">
-                  <img src="./img/piña.png" class="img-fluid me-5 rounded-circle"
-                    style="width: 100px; height: auto;" alt="">
+                  <img src="./img/piña.png" class="img-fluid me-5 rounded-circle" style="width: 100px; height: auto;"
+                    alt="">
                 </div>
               </th>
               <td>
@@ -206,7 +212,7 @@
               <h1 class="display-6 mb-4">Precio <span class="fw-normal">Total</span></h1>
               <div class="d-flex justify-content-between mb-4">
                 <h5 class="mb-0 me-4">Subtotal:</h5>
-                <p class="mb-0">$27000</p>
+                <p class="mb-0">$23500</p>
               </div>
               <div class="d-flex justify-content-between">
                 <h5 class="mb-0 me-4">Envio</h5>
@@ -218,9 +224,11 @@
             </div>
             <div class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
               <h5 class="mb-0 ps-4 me-4">Total</h5>
-              <p class="mb-0 pe-4">$32000</p>
+              <p class="mb-0 pe-4">$28500</p>
             </div>
-            <a href="./checkout.html" class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" type="button">Proceder al Pago</a>
+            <a href="./checkout.html"
+              class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4"
+              type="button">Proceder al Pago</a>
           </div>
         </div>
       </div>
@@ -230,7 +238,7 @@
   <!--FOOTER-->
   <div class="container-fluid bg-dark text-white-50 footer pt-3 mt-3">
     <div class="container py-3">
-      <div class="pb-3 mb-3" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+      <div class="pb-3 mb-3" style="border-bottom: 1px solid rgba(161, 197, 24, 1161, 197, 24, 1) ;">
         <div class="row g-4 justify-content-center">
           <div class="col-lg-3">
             <div class="d-flex justify-content-center pt-3">
@@ -252,11 +260,10 @@
           <div class="col-lg-4 col-md-6">
             <div class="d-flex flex-column text-start footer-item">
               <h4 class="text-light mb-3">Información</h4>
-              <a class="btn-link" href="">Sobre nosotros</a>
-              <a class="btn-link" href="">Contáctanos</a>
+              <a class="btn-link" href="./contact.html">Contáctanos</a>
               <a class="btn-link" href="">Política de privacidad</a>
               <a class="btn-link" href="">Términos & Condiciones</a>
-              <a class="btn-link" href="">FAQs & Ayuda</a>
+              <a class="btn-link" href="./faq.html">FAQs & Ayuda</a>
             </div>
           </div>
           <!-- Columna 2 -->
