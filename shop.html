@@ -55,11 +55,19 @@
         </div>
     </div>
 
-
-    <!-- Single Page Header -->
-    <div class="container-fluid page-header py-5">
-        <h1 class="text-center text-white display-6">Tienda</h1>
-    </div>
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs-custom-inset">
+        <div class="breadcrumbs-custom context-dark bg-overlay-46">
+            <div class="container">
+                <h1 class="breadcrumbs-custom-title">Tienda</h1>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active">Tienda</li>
+                </ul>
+            </div>
+            <div style="background-image: url(images/pxfuel.com\ \(20\).jpg);"></div>
+        </div>
+    </section>
 
     <!-- PRODUCTS -->
     <section>
@@ -69,8 +77,8 @@
                     <div class="col-md-12">
                         <div class="titlepage">
                             <h2>Nuestros Productos</h2>
-                            <p>Descubre recetas, consejos de salud, y artículos que te ayudarán a aprovechar al máximo
-                                el poder de lo natural</p>
+                            <p>Sumérgete en el mundo de la calidad natural. Te ofrecemos lo mejor de la naturaleza, sin
+                                procesos químicos y con un sabor y nutrición incomparables</p>
                         </div>
                     </div>
                 </div>
@@ -164,6 +172,72 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card">
+                            <img src="./img/mango.png" alt="Mango Deshidratado">
+                            <div class="card-content">
+                                <h5>Mango Deshidratado</h5>
+                                <h6>$ 5800</h6>
+                            </div>
+                            <div class="btn-container">
+                                <a href="#" class="btn border border-secondary add-to-cart" onclick="addToCart(event, this)">
+                                    <i class="fa fa-shopping-bag me-2"></i>Añadir
+                                </a>
+                                <div class="quantity-controls d-none">
+                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                        <i class="fa fa-plus-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./img/mango.png" alt="Mango Deshidratado">
+                            <div class="card-content">
+                                <h5>Mango Deshidratado</h5>
+                                <h6>$ 5800</h6>
+                            </div>
+                            <div class="btn-container">
+                                <a href="#" class="btn border border-secondary add-to-cart" onclick="addToCart(event, this)">
+                                    <i class="fa fa-shopping-bag me-2"></i>Añadir
+                                </a>
+                                <div class="quantity-controls d-none">
+                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                        <i class="fa fa-plus-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./img/mango.png" alt="Mango Deshidratado">
+                            <div class="card-content">
+                                <h5>Mango Deshidratado</h5>
+                                <h6>$ 5800</h6>
+                            </div>
+                            <div class="btn-container">
+                                <a href="#" class="btn border border-secondary add-to-cart" onclick="addToCart(event, this)">
+                                    <i class="fa fa-shopping-bag me-2"></i>Añadir
+                                </a>
+                                <div class="quantity-controls d-none">
+                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </button>
+                                    <span class="quantity">1</span>
+                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                        <i class="fa fa-plus-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -172,24 +246,27 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="pagination d-flex justify-content-center mt-5">
-                    <a href="#" class="rounded">&laquo;</a>
-                    <a href="#" class="active rounded">1</a>
-                    <a href="#" class="rounded">2</a>
-                    <a href="#" class="rounded">3</a>
-                    <a href="#" class="rounded">&raquo;</a>
+        <!-- Paginacion -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pagination d-flex justify-content-center mt-5">
+                        <a href="#" class="rounded disabled-link">&laquo;</a>
+                        <a href="#" class="active rounded">1</a>
+                        <a href="" class="rounded disabled-link">2</a>
+                        <a href="" class="rounded disabled-link">3</a>
+                        <a href="" class="rounded disabled-link">&raquo;</a>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
+
     </section>
 
     <!--FOOTER-->
     <div class="container-fluid bg-dark text-white-50 footer pt-3 mt-3">
         <div class="container py-3">
-            <div class="pb-3 mb-3" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+            <div class="pb-3 mb-3" style="border-bottom: 1px solid rgba(161, 197, 24, 1) ;">
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-3">
                         <div class="d-flex justify-content-center pt-3">
@@ -211,7 +288,6 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Información</h4>
-                            <a class="btn-link" href="./about.html">Sobre nosotros</a>
                             <a class="btn-link" href="./contact.html">Contáctanos</a>
                             <a class="btn-link" href="">Política de privacidad</a>
                             <a class="btn-link" href="">Términos & Condiciones</a>
