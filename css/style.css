@@ -258,6 +258,70 @@ nav a.active {
     margin-top: 24px;
 }
 
+/** Lists **/
+.list-marked {
+	text-align: left;
+	list-style-type: none; /* Eliminar viñetas predeterminadas */
+}
+
+.list-marked > li {
+	text-indent: -25px;
+	padding-left: 25px;
+}
+
+.list-marked > li::before {
+	position: relative;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	content: '';
+	height: 9px;
+	width: 9px;
+	margin-right: 16px;
+	border-radius: 50%;
+	background: #d7d7d7;
+}
+
+.list-marked > li + li {
+	margin-top: 10px;
+}
+
+.list-marked-sm > li {
+	text-indent: -15px;
+	padding-left: 15px;
+}
+
+.list-marked-sm > li::before {
+	height: 7px;
+	width: 7px;
+	margin-right: 8px;
+}
+
+.list-marked-secondary > li::before {
+	background: var(--manzana);
+}
+
+* + .list-marked {
+	margin-top: 15px;
+}
+
+p + .list-marked {
+	margin-top: 10px;
+}
+
+.list-0 > li + li {
+	margin-top: 0;
+}
+
+.list-custom {
+	display: inline-block;
+	list-style-type: none; /* Eliminar viñetas predeterminadas */
+}
+
+p + .list-custom {
+	margin-top: 30px;
+}
+
 /** PRODUCTS **/
 .product {
     width: 100%;
