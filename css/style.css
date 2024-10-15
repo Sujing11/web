@@ -475,14 +475,12 @@ p + .list-custom {
     display: flex;
     max-height: 450px;
     align-items: stretch;
-    /* Asegura que ambos contenedores (imagen y texto) tengan la misma altura */
 }
 
 .blog .blog_img {
     width: 100%;
     display: flex;
     align-items: stretch;
-    /* El contenedor de la imagen también se estira */
 }
 
 .blog .blog_img figure {
@@ -568,6 +566,7 @@ p + .list-custom {
 
 .b-slide-text {
     padding: 48px;
+    margin-bottom: 20px;
 }
 
 .b-slide img {
@@ -611,7 +610,9 @@ p + .list-custom {
 
 /* barra lateral del blog */
 .blog-sidebar {
-    margin-top: 48px;
+    margin-top: 0px;
+    background-color: whitesmoke;
+    padding: 32px;
 }
 
 .blog-sidebar h2 {
