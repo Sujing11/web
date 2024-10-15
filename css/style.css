@@ -323,6 +323,27 @@ p + .list-custom {
 }
 
 /** PRODUCTS **/
+.video_section {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.video_section .titlepage {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.video_section .titlepage p {
+    color: var(--morazul);
+    font-size: 1.2em;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+/** PRODUCTS **/
 .product {
     width: 100%;
     margin: auto;
