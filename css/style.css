@@ -987,7 +987,7 @@ p + .list-custom {
     height: 45px;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: 0.45s all ease-in-out;
     z-index: 99;
     background-color: var(--morazul);
     border: solid 2px var(--manzana) !important;
@@ -1240,7 +1240,6 @@ textarea {
     margin-bottom: 70px;
     background-color: var(--morazul);
 }
-
 
 /* Media Queries */
 @media (max-width: 1200px) {
