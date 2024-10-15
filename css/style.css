@@ -76,6 +76,16 @@ html a {
     font-weight: bold;
 }
 
+
+.video-container {
+    margin-bottom: 20px;
+  }
+  
+  iframe {
+    max-width: 100%;
+  }
+  
+
 /** NAVBAR **/
 .container-fluid {
     position: relative;
