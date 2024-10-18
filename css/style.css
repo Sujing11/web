@@ -469,7 +469,6 @@ p + .list-custom {
     color: var(--manzana);
 }
 
-
 /** BLOG **/
 #blog {
     padding-top: 45px;
@@ -581,13 +580,14 @@ p + .list-custom {
 
 .b-slide img {
     width: 100%;
-    height: 200px;
+    height: 10px;
     object-fit: cover;
 }
 
 .b-text h2 {
     font-size: 1.5em;
     font-weight: 700;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -622,19 +622,18 @@ p + .list-custom {
 .blog-sidebar {
     margin-top: 0px;
     background-color: whitesmoke;
-    padding: 32px;
+    padding: 24px;
 }
 
-.blog-sidebar h2 {
+.blog-sidebar h3 {
     font-size: 1.4em;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.resent-post-single h3 {
-    font-size: 1.1em;
+.resent-post-single h4 {
+    font-size: 1.2em;
     color: #0A2E35;
-    margin-bottom: 5px;
 }
 
 .resent-post-single p {
@@ -643,7 +642,7 @@ p + .list-custom {
 
 .categorie p {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     cursor: pointer;
 }
 
