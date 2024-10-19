@@ -343,10 +343,7 @@
 }
 
 
-/*
-*
-* Team
-*/
+/** Team **/
 .team-classic {
 	position: relative;
 	overflow: hidden;
@@ -452,10 +449,7 @@
 	}
 }
 
-/*
-*
-* Offsets
-*/
+/** Offsets **/
 *+p {
 	margin-top: 15px;
 }
@@ -932,10 +926,7 @@ h4+.instafeed {
 	}
 }
 
-/*
-*
-* Sections
-*/
+/** Sections **/
 
 .section-60,
 .section-md,
