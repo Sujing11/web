@@ -23,12 +23,10 @@
           <h2 class="title">Ingresa a tu cuenta</h2>
           <form action="" id="formvalidate">
             <div class="input-group">
-              <label class="placeholder" for="userName">Nombre de usuario</label>
-              <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
+              <input class="form-control" name="userMail" id="userMail" type="email" placeholder="Correo" required/>
             </div>
             <div class="input-group">
-              <label class="placeholder" for="userPassword">Contraseña</label>
-              <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" />
+              <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="Contraseña" required/>
             </div>
             <button type="submit" id="login">Ingresar</button>
             <div class="supporter">
@@ -45,7 +43,8 @@
         </div>
       </div>
     </div>
-
+    <script src="./js/admiUsers.js"></script>
+    <script src="./js/user.js"></script>
 </body>
 
 </html>

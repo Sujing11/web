@@ -43,23 +43,23 @@
         </div>
     </div>
 
-    <h2 class="m-5 text-center">Lista de Mensajes</h2>
+    <h2 class="m-5 text-center">Lista de Usuarios</h2>
 
     <div class="m-4">
-        <table class="mb-4">
+        <table id="usuariosTabla" class="mb-4">
             <thead>
                 <tr>
                     <th>Nombre</th>
+                    <th>Apellido</th>
                     <th>Correo</th>
-                    <th>Telefono</th>
-                    <th>Mensaje</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
             </tbody>
         </table>
 
-        <!-- <button type="button" class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#modal" onclick="btnAdd()">Agregar</button>  -->
+        <button type="button" class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#modal" onclick="btnAdd()">Agregar</button>
     </div>
 
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -77,19 +77,20 @@
                         </div>
                         <div class="mb-2 mx-1">
                             <label class="form-label" for="name"><b>Nombre</b></label>
-                            <input class="form-control" id="name" type="text" placeholder="Ingrese el nombre">
+                            <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="mb-2 mx-1">
+                            <label class="form-label" for="lastName"><b>Apellido</b></label>
+                            <input class="form-control" id="lastName" type="text" placeholder="Ingrese su Apellido">
                         </div>
                         <div class="mb-2 mx-1">
                             <label class="form-label" for="email"><b>Correo</b></label>
                             <input class="form-control" id="email" type="text" placeholder="Ingrese el correo">
                         </div>
+
                         <div class="mb-2 mx-1">
-                            <label class="form-label" for="phone"><b>Telefono</b></label>
-                            <input class="form-control" id="phone" type="text" placeholder="Ingrese el telefono">
-                        </div>
-                        <div class="mb-2 mx-1">
-                            <label class="form-label" for="message"><b>Mensaje</b></label>
-                            <textarea id="message" cols="20" rows="5" class="form-control"
+                            <label class="form-label" for="password"><b>Contraseña</b></label>
+                            <textarea id="password" cols="20" rows="5" class="form-control"
                                 placeholder="Ingrese el mensaje"></textarea>
                         </div>
                     </div>
@@ -97,8 +98,8 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success btn-modal-footer" onclick="crear()">Agregar</button>
                     <button type="button" class="btn btn-danger btn-modal-footer" onclick="eliminar()">Eliminar</button>
-                    <!-- <button type="button" class="btn btn-primary btn-modal-footer"
-                        onclick="actualizar()">Actualizar</button> -->
+                    <button type="button" class="btn btn-primary btn-modal-footer"
+                        onclick="actualizar()">Actualizar</button>
                 </div>
             </div>
         </div>
@@ -119,7 +120,8 @@
 
     <!-- Icon Font Stylesheet -->
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/admiContact.js"></script>
+    <!-- <script src="./js/admiContact copy.js"></script> -->
+    <script src="./js/admiUsers.js"></script>
 
 </body>
 
