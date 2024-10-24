@@ -1,5 +1,5 @@
-//const apiURL = 'https://talentotech.vercel.app/users/';
-const apiURL = 'http://localhost:3000/users/';
+const apiURL = 'https://talentotech.vercel.app/users/';
+//const apiURL = 'http://localhost:3000/users/';
 
 const tableBody = document.getElementById("tableBody")
 const inputId = document.getElementById("id")
