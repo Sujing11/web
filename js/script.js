@@ -80,32 +80,6 @@ getProducts();
 
 })(jQuery);
 
-// 
-function addToCart(event, element) {
-    event.preventDefault();
-    const btnContainer = element.closest('.btn-container');
-    btnContainer.querySelector('.add-to-cart').classList.add('d-none');
-    btnContainer.querySelector('.quantity-controls').classList.remove('d-none');
-}
-
-function removeItem(event, element) {
-    const quantityElement = element.nextElementSibling;
-    let quantity = parseInt(quantityElement.textContent);
-    if (quantity > 1) {
-        quantityElement.textContent = --quantity;
-    } else {
-        const btnContainer = element.closest('.btn-container');
-        btnContainer.querySelector('.add-to-cart').classList.remove('d-none');
-        btnContainer.querySelector('.quantity-controls').classList.add('d-none');
-    }
-}
-
-function addItem(event, element) {
-    const quantityElement = element.previousElementSibling;
-    let quantity = parseInt(quantityElement.textContent);
-    quantityElement.textContent = ++quantity;
-}
-
 
 "use strict";
 (function () {

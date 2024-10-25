@@ -366,6 +366,105 @@ p+.list-custom {
     margin-top: 30px;
 }
 
+/* BAG */
+/* Estilos básicos del carrito */
+.cart {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    border-radius: 10px;
+    font-size: 2em;
+    background-color: whitesmoke;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    transition: .5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 999;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart:hover {
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 300px;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: white;
+    transition: 0.5s;
+    padding: 20px;
+}
+
+/* Estilos para los elementos del carrito */
+#cart-summary {
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+#cart-items img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+#cart-items .cart-quantity-controls {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+}
+
+#cart-items .btn {
+    font-size: 16px;
+    padding: 2px 5px;
+    color: var(--morazul);
+    background-color: transparent;
+}
+
+#total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--morazul);
+}
+
+.cart .btn-danger {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color:var(--morazul);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.cart .btn-danger:hover {
+    color: var(--fresa);
+    background-color: transparent;
+}
+
+
+
 /** PRODUCTS **/
 .product {
     width: 100%;
@@ -951,55 +1050,6 @@ p+.list-custom {
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
     display: none;
-}
-
-/** CONTACT **/
-.contact_section {
-    background-image: url(../img/orange-dish.png);
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: right center;
-    padding-top: 90px;
-    padding-bottom: 70px;
-}
-
-.contact_section form {
-    border: 2px solid var(--manzana);
-    border-radius: 10px;
-    padding: 40px;
-    background-color: white;
-}
-
-.contact_section input {
-    border: none;
-    outline: none;
-    background-color: var(--manzana-light);
-    width: 100%;
-    margin: 10px 0;
-    padding: 5px;
-}
-
-.contact_section textarea {
-    border: none;
-    outline: none;
-    background-color: var(--manzana-light);
-    width: 100%;
-    margin: 10px 0;
-    padding: 5px;
-}
-
-.contact_form-container button {
-    border-radius: 5px;
-    background-color: var(--morazul);
-    color: white;
-    padding: 8px 40px;
-    text-transform: uppercase;
-}
-
-.contact_form-container button:hover {
-    background-color: var(--manzana);
-    color: var(--morazul);
-    border: none;
 }
 
 /** CONTACT SECTION **/

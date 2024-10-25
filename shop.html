@@ -42,9 +42,9 @@
                     <div class="d-flex m-3 me-0">
                         <a href="./cart.html" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
-                            <span
+                            <span id="cart-item-count"
                                 class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-white px-1"
-                                style="top: -2px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                                style="top: -2px; left: 15px; height: 20px; min-width: 20px;">0</span>
                         </a>
                         <a href="./admiProducts.html" class="my-auto">
                             <i class="fas fa-user fa-2x"></i>
@@ -84,54 +84,68 @@
                 </div>
                 <div class="row">
                     <div class="container-card">
+                        <!-- Producto 1 -->
                         <div class="card">
-                            <a href="./product-detail-avo.html"><img src="./img/aceite_aguacate.png" alt="Aceite de aguacate"></a>
+                            <a href="./product-detail-avo.html"><img src="./img/aceite_aguacate.png"
+                                    alt="Aceite de aguacate"></a>
                             <div class="card-content">
-                                <a href="./product-detail-avo.html"><h5>Aceite de aguacate</h5></a>
-                                <h6>$ 37000</h6>
+                                <a href="./product-detail-avo.html">
+                                    <h5>Aceite de aguacate</h5>
+                                </a>
+                                <h6>$37000</h6>
                             </div>
                             <div class="btn-container">
                                 <a href="#" class="btn border border-secondary add-to-cart"
-                                    onclick="addToCart(event, this)">
+                                    onclick="addToCart(event, this, 37000, 'Aceite de aguacate')">
                                     <i class="fa fa-shopping-bag me-2"></i>Añadir
                                 </a>
                                 <div class="quantity-controls d-none">
-                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                    <button class="btn btn-sm remove-item"
+                                        onclick="removeItem(event, this, 37000, 'Aceite de aguacate')">
                                         <i class="fa fa-minus-circle"></i>
                                     </button>
                                     <span class="quantity">1</span>
-                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                    <button class="btn btn-sm add-item"
+                                        onclick="addItem(event, this, 37000, 'Aceite de aguacate')">
                                         <i class="fa fa-plus-circle"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
+                        <!-- Producto 2 -->
                         <div class="card">
                             <a href="./product-detail-piña.html"><img src="./img/piña.png" alt="Piña Deshidratada"></a>
                             <div class="card-content">
-                                <a href="./product-detail-piña.html"><h5>Piña Deshidratada</h5></a>
-                                <h6>$ 5000</h6>
+                                <a href="./product-detail-piña.html">
+                                    <h5>Piña Deshidratada</h5>
+                                </a>
+                                <h6>$5000</h6>
                             </div>
                             <div class="btn-container">
                                 <a href="#" class="btn border border-secondary add-to-cart"
-                                    onclick="addToCart(event, this)">
+                                    onclick="addToCart(event, this, 5000, 'Piña Deshidratada')">
                                     <i class="fa fa-shopping-bag me-2"></i>Añadir
                                 </a>
                                 <div class="quantity-controls d-none">
-                                    <button class="btn btn-sm remove-item" onclick="removeItem(event, this)">
+                                    <button class="btn btn-sm remove-item"
+                                        onclick="removeItem(event, this, 5000, 'Piña Deshidratada')">
                                         <i class="fa fa-minus-circle"></i>
                                     </button>
                                     <span class="quantity">1</span>
-                                    <button class="btn btn-sm add-item" onclick="addItem(event, this)">
+                                    <button class="btn btn-sm add-item"
+                                        onclick="addItem(event, this, 5000, 'Piña Deshidratada')">
                                         <i class="fa fa-plus-circle"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
+                        <!-- Producto 3 -->
                         <div class="card">
                             <a href="./product-detail.html"><img src="./img/fresa.png" alt="Fresa Deshidratada"></a>
                             <div class="card-content">
-                                <a href="./product-detail.html"><h5>Fresa Deshidratada</h5></a>
+                                <a href="./product-detail.html">
+                                    <h5>Fresa Deshidratada</h5>
+                                </a>
                                 <h6>$ 6000</h6>
                             </div>
                             <div class="btn-container">
@@ -153,7 +167,9 @@
                         <div class="card">
                             <a href="./product-detail-mango.html"><img src="./img/mango.png" alt="Mango Deshidratado"></a>
                             <div class="card-content">
-                                <a href="./product-detail-mango.html"><h5>Mango Deshidratado</h5></a>
+                                <a href="./product-detail-mango.html">
+                                    <h5>Mango Deshidratado</h5>
+                                </a>
                                 <h6>$ 5000</h6>
                             </div>
                             <div class="btn-container">
@@ -175,11 +191,14 @@
                         <div class="card">
                             <a href="./product-detail-banana.html"><img src="./img/banano.png" alt="Mango Deshidratado"></a>
                             <div class="card-content">
-                                <a href="./product-detail-banana.html"><h5>Banano Deshidratado</h5></a>
+                                <a href="./product-detail-banana.html">
+                                    <h5>Banano Deshidratado</h5>
+                                </a>
                                 <h6>$ 5800</h6>
                             </div>
                             <div class="btn-container">
-                                <a href="#" class="btn border border-secondary add-to-cart" onclick="addToCart(event, this)">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
                                     <i class="fa fa-shopping-bag me-2"></i>Añadir
                                 </a>
                                 <div class="quantity-controls d-none">
@@ -196,11 +215,14 @@
                         <div class="card">
                             <a href="./product-detail-coco.html"><img src="./img/coco.png" alt="Mango Deshidratado"></a>
                             <div class="card-content">
-                                <a href="./product-detail-coco.html"><h5>Coco Deshidratado</h5></a>
+                                <a href="./product-detail-coco.html">
+                                    <h5>Coco Deshidratado</h5>
+                                </a>
                                 <h6>$ 6000</h6>
                             </div>
                             <div class="btn-container">
-                                <a href="#" class="btn border border-secondary add-to-cart" onclick="addToCart(event, this)">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
                                     <i class="fa fa-shopping-bag me-2"></i>Añadir
                                 </a>
                                 <div class="quantity-controls d-none">
@@ -217,11 +239,14 @@
                         <div class="card">
                             <a href="./product-detail-papaya.html"><img src="./img/papaya.png" alt="Mango Deshidratado"></a>
                             <div class="card-content">
-                                <a href="./product-detail-papaya.html"><h5>Papaya Deshidratada</h5></a>
+                                <a href="./product-detail-papaya.html">
+                                    <h5>Papaya Deshidratada</h5>
+                                </a>
                                 <h6>$ 5000</h6>
                             </div>
                             <div class="btn-container">
-                                <a href="#" class="btn border border-secondary add-to-cart" onclick="addToCart(event, this)">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
                                     <i class="fa fa-shopping-bag me-2"></i>Añadir
                                 </a>
                                 <div class="quantity-controls d-none">
@@ -238,11 +263,14 @@
                         <div class="card">
                             <a href="./product-detail-kiwi.html"><img src="./img/kiwi.png" alt="Mango Deshidratado"></a>
                             <div class="card-content">
-                                <a href="./product-detail-kiwi.html"><h5>Kiwi Deshidratado</h5></a>
+                                <a href="./product-detail-kiwi.html">
+                                    <h5>Kiwi Deshidratado</h5>
+                                </a>
                                 <h6>$ 6500</h6>
                             </div>
                             <div class="btn-container">
-                                <a href="#" class="btn border border-secondary add-to-cart" onclick="addToCart(event, this)">
+                                <a href="#" class="btn border border-secondary add-to-cart"
+                                    onclick="addToCart(event, this)">
                                     <i class="fa fa-shopping-bag me-2"></i>Añadir
                                 </a>
                                 <div class="quantity-controls d-none">
@@ -255,7 +283,7 @@
                                     </button>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -264,6 +292,26 @@
                 </div>
             </div>
         </div>
+    
+        <!-- Mostrar el carrito -->
+        <div id="cart" class="cart row mt-4">
+            <div id="cart-summary" class="container">
+                <a href="./cart.html" class="position-relative me-4 my-auto">
+                    <i class="fa fa-shopping-bag fa-2x"></i>
+                </a>
+                <ul id="cart-items">
+                    <!-- Los productos añadidos se mostrarán aquí -->
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p>Total: $<span id="total-price">0</span></p>
+                    <a href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Vaciar Bolsa"><button
+                            class="btn btn-danger ms-3" onclick="clearCart()">
+                            <i class="fa fa-trash"></i>
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    
         <!-- Paginacion -->
         <div class="container">
             <div class="row">
@@ -346,6 +394,7 @@
     <!-- JavaScript Libraries -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/cart.js"></script>
 
 </body>
 
